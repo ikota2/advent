@@ -1,9 +1,4 @@
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route,
-	Link,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import { Layout } from '../layout';
 import { Home } from '../../pages/home';
@@ -14,8 +9,12 @@ export const AppRouter = () => {
 		<Router>
 			<Routes>
 				<Route
-					path='/'
-					element={<Layout><Home/></Layout>}
+					path="/"
+					element={
+						<Layout>
+							<Home />
+						</Layout>
+					}
 				/>
 
 				{featuresPaths.map(({ path, component: Component }) => (
@@ -26,8 +25,7 @@ export const AppRouter = () => {
 						handle={{ crumb: <Link to={`/${path}`}>{path}</Link> }}
 					/>
 				))}
-
 			</Routes>
 		</Router>
-	)
-}
+	);
+};
