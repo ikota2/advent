@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-	CharacterCounter,
-	TagInput,
-} from '../javascript';
+import { CharacterCounter, TagInput } from '../javascript';
 import { OnlyToggle } from '../css';
 import { FeaturePage } from '../../pages/FeaturePage';
 import { NotFound } from '../../pages/NotFound';
@@ -15,18 +12,33 @@ const generatePath = (category, day, name) => {
 };
 
 const createFeatureItems = (category, items) => {
-	return items.map(item => ({
+	return items.map((item) => ({
 		...item,
 		path: generatePath(category, item.day, item.name),
 	}));
 };
 
 const jsItems = createFeatureItems('js', [
-	{ day: 1, name: 'Show and Hide Password Input', component: () => {}, isAble: false },
+	{
+		day: 1,
+		name: 'Show and Hide Password Input',
+		component: () => {},
+		isAble: false,
+	},
 	{ day: 2, name: 'Custom Dropdown', component: () => {}, isAble: false },
 	{ day: 3, name: 'Resizable Text Area', component: () => {}, isAble: false },
-	{ day: 4, name: 'Resizable Split Panels', component: () => {}, isAble: false },
-	{ day: 5, name: 'Character Counter', component: CharacterCounter, isAble: true },
+	{
+		day: 4,
+		name: 'Resizable Split Panels',
+		component: () => {},
+		isAble: false,
+	},
+	{
+		day: 5,
+		name: 'Character Counter',
+		component: CharacterCounter,
+		isAble: true,
+	},
 	{ day: 6, name: 'Copy to Clipboard', component: () => {}, isAble: false },
 	{ day: 7, name: 'Slugify Title', component: () => {}, isAble: false },
 	{ day: 8, name: 'Tag Input', component: TagInput, isAble: true },
