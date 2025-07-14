@@ -1,0 +1,32 @@
+.card {
+	border-radius: 1.2rem;
+	background-color: crimson;
+	height: 10rem;
+	width: 10rem;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr;
+	gap: 10px;
+}
+
+.link {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-decoration: none;
+	color: wheat;
+	padding: 5px 10px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.disabled {
+	cursor: not-allowed;
+	background-color: #b2afaf;
+	color: crimson;
+	border-radius: 1.2rem;
+}

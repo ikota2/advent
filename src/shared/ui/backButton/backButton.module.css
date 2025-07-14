@@ -1,0 +1,35 @@
+.buttonContainer {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.backButton {
+	background-color: deeppink;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-weight: 700;
+	border: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pushCombined {
+	box-shadow: 0 4px 0 #c1185c, 0 6px 8px rgba(0, 0, 0, 0.3);
+	transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pushCombined:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 0 #c1185c, 0 7px 10px rgba(0, 0, 0, 0.4);
+}
+
+.pushCombined:active {
+	transform: translateY(3px);
+	box-shadow: 0 1px 0 #c1185c, 0 3px 5px rgba(0, 0, 0, 0.2);
+}
