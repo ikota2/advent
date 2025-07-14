@@ -1,1 +1,1 @@
-export { featuresPaths } from './featuresPaths.jsx';
+export { featuresCfg } from './featuresCfg.jsx';

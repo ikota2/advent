@@ -1,13 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Layout } from '../../app/layout';
+import { Cards } from '../../shared/ui/cards';
+
+const paths = [
+	{ name: 'css', isAble: true },
+	{ name: 'js', isAble: true },
+	{ name: '404', isAble: false },
+];
 
 export const Home = () => {
 	return (
-		<div>
-			<Link to={'/css'}>css</Link>
-			<br />
-			<Link to={'/js'}>js</Link>
-			<br />
-			<Link to={'/404'}>404</Link>
-		</div>
+		<Layout>
+			<Cards paths={paths} />
+		</Layout>
 	);
 };
