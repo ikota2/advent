@@ -1,6 +1,6 @@
 import { Layout } from '../../app/layout';
 import { Cards } from '../../shared/ui/cards';
-import { getFeatureData } from '../../features/config/featuresCfg.jsx';
+import { getFeatureData } from '../../features/config';
 
 export const FeaturePage = ({ featureKey }) => {
 	const featureData = getFeatureData(featureKey);
