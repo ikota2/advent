@@ -14,12 +14,15 @@ main,
 
 header {
 	grid-column: 1 / 4;
-	background-color: red;
+	background-color: black;
+	color: greenyellow;
+	text-align: center;
 }
 
 .leftSidebar {
 	grid-column: 1 / 2;
-	background-color: green;
+	background-color: lightseagreen;
+	border-right: 2px dashed orangered;
 }
 
 main {
@@ -30,12 +33,14 @@ main {
 .rightSidebar {
 	grid-column: 3 / 4;
 	background-color: greenyellow;
+	border-left: 2px dashed firebrick;
 }
 
 footer {
 	grid-column: 1 / 4;
 	background-color: blue;
 	color: white;
+	text-align: center;
 }
 
 @media (max-width: 768px) {
