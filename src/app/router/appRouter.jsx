@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-import { Home } from '../../pages/home/index.js';
-import { generateRoutes } from '../../features/config/featuresCfg.jsx';
+import { Home } from '../../pages/Home';
+import { generateRoutes } from '../../features/config';
 
 export const AppRouter = () => {
 	const routes = generateRoutes();
