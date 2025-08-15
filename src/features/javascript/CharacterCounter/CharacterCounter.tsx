@@ -1,6 +1,5 @@
 import { type ChangeEvent, useState } from 'react';
 
-import { Layout } from '@/app/layout';
 import FeatureName from '@/shared/ui/featureName/featureName';
 
 export const CharacterCounter = () => {
@@ -10,7 +9,7 @@ export const CharacterCounter = () => {
   }
 
   return (
-    <Layout>
+    <>
       <FeatureName />
       <input
         type="text"
@@ -20,6 +19,6 @@ export const CharacterCounter = () => {
         placeholder={'type something'}
       />
       <p>{text.length > 0 ? text.length : '0'} characters</p>
-    </Layout>
+    </>
   );
 };

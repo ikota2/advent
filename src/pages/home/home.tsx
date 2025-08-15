@@ -1,4 +1,3 @@
-import { Layout } from '@/app/layout';
 import { Cards } from '@/shared/ui/cards';
 
 const paths = [
@@ -8,9 +7,5 @@ const paths = [
 ];
 
 export const Home = () => {
-  return (
-    <Layout>
-      <Cards paths={paths} />
-    </Layout>
-  );
+  return <Cards paths={paths} />;
 };

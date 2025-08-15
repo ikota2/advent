@@ -6,7 +6,6 @@ import {
   useState,
 } from 'react';
 
-import { Layout } from '@/app/layout';
 import FeatureName from '@/shared/ui/featureName/featureName';
 import classes from './tag-input.module.css';
 
@@ -50,7 +49,7 @@ export const TagInput: FC = () => {
   };
 
   return (
-    <Layout>
+    <>
       <FeatureName />
       <div className={classes.tagInputContainer}>
         {tags.map((tag, index) => (
@@ -75,6 +74,6 @@ export const TagInput: FC = () => {
           className={classes.input}
         />
       </div>
-    </Layout>
+    </>
   );
 };

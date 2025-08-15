@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
-import { Layout } from '@/app/layout';
 import classes from './resizable-text-area.module.css';
+import FeatureName from '@/shared/ui/featureName/featureName';
 
 export const ResizableTextArea: React.FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -36,13 +36,14 @@ export const ResizableTextArea: React.FC = () => {
   }, [value]);
 
   return (
-    <Layout>
+    <>
+      <FeatureName />
       <textarea
         ref={textareaRef}
         value={value}
         onChange={handleChange}
         className={classes.textarea}
       />
-    </Layout>
+    </>
   );
 };
