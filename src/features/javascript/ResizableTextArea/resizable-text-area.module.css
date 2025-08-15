@@ -1,0 +1,20 @@
+/*.textarea {*/
+/*	width: 200px;*/
+/*	max-height: 150px;*/
+/*	field-sizing: content;*/
+/*&:focus {*/
+/*	 outline: 2px solid blue;  */
+/* }*/
+
+/*!* Fallback for older browsers *!*/
+/*@supports not (field-sizing: content) {*/
+/*	height: 1.5em;*/
+/*}*/
+/*}*/
+
+.textarea {
+	resize: none;
+	transition: all 200ms ease-out;
+	min-height: 20px;
+	overflow: hidden;
+}

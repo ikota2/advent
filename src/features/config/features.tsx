@@ -9,7 +9,7 @@ import type {
   RouteList,
 } from '@/shared/types';
 import { OnlyToggle } from '../css';
-import { CharacterCounter, TagInput } from '../javascript';
+import { CharacterCounter, ResizableTextArea, TagInput } from '../javascript';
 
 const toKebabCase = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
@@ -39,8 +39,8 @@ const jsItems: FeatureItemInput[] = createFeatureItems('js', [
   {
     day: 3,
     name: 'Resizable Text Area',
-    component: () => <></>,
-    isAble: false,
+    component: ResizableTextArea,
+    isAble: true,
   },
   {
     day: 4,
