@@ -6,11 +6,13 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
+		"build:watch": "vite build --watch",
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"create:component": "node scripts/create-component.js"
 	},
 	"dependencies": {
+		"path": "^0.12.7",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-router": "^7.6.3",
@@ -18,10 +20,20 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
+		"@types/node": "^24.0.15",
 		"@types/react": "^18.3.23",
 		"@types/react-dom": "^18.3.7",
 		"@vitejs/plugin-react-swc": "^3.10.2",
+		"autoprefixer": "^10.4.21",
 		"globals": "^15.15.0",
+		"jiti": "^2.4.2",
+		"postcss": "^8.5.6",
+		"postcss-import": "^16.1.1",
+		"postcss-load-config": "^6.0.1",
+		"postcss-modules": "^6.0.1",
+		"postcss-nested": "^7.0.2",
+		"postcss-preset-env": "^10.2.4",
+		"tsx": "^4.20.3",
 		"typescript": "^5.8.3",
 		"vite": "^6.3.5"
 	}
